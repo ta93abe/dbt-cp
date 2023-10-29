@@ -5,7 +5,7 @@ description = "Add a short description here"
 authors = [
     { name = "Takumi Abe", email = "ta93abe@ta93abe.com" }
 ]
-dependencies = []
+dependencies = ["dbt-duckdb~=1.6.2"]
 readme = "README.md"
 requires-python = ">= 3.8"
 

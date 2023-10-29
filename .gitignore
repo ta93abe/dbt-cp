@@ -8,3 +8,9 @@ wheels/
 
 # venv
 .venv
+
+# dbt
+target/
+dbt_packages/
+logs/
+.user.yml
