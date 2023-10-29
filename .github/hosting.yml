@@ -1,7 +1,9 @@
 name: Hosting dbt docs
 
 on:
-  push: main
+  push:
+    branches:
+      - main
 
 jobs:
   hosting:
