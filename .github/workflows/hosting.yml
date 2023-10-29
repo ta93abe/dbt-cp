@@ -23,12 +23,9 @@ jobs:
       - name: Sync
         run: |
           rye sync
-      - name: Activate
-        run: |
-          source .venv/bin/activate
       - name: Docs build
         run: |
-          dbt docs generate
+          rye run dbt docs generate
 
       - name: Copy files
         run: |
