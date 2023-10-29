@@ -15,8 +15,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install Rye
-        run: |
-          curl -sSf https://rye-up.com/get | bash
+        uses: baptiste0928/cargo-install@v2
+        with:
+          crate: rye
+          git: https://github.com/mitsuhiko/rye
+          branch: main
       - name: Sync
         run: |
           rye sync
